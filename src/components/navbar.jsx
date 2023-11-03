@@ -35,7 +35,7 @@
 import React from 'react';
 import './navbar.css'
 import { Link } from 'react-router-dom';
-import {ShoppingCart,House} from 'phosphor-react';
+import {ShoppingCart,House,User} from 'phosphor-react';
 
 const Navbar = () => {
   return (
@@ -50,13 +50,13 @@ const Navbar = () => {
           <Link to="/login">Log-In</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact"><User size={32} style={{ verticalAlign: 'middle' }}/>Contact</Link>
         </li>
         <li>
           <Link to="/about">About</Link>  
         </li>
         <li>
-          <Link to="/cart"><ShoppingCart size={32} /></Link>
+          <Link to="/cart"><ShoppingCart size={32}  style={{ verticalAlign: 'middle' }}/>Cart</Link>
         </li>
       </ul>
     </nav>
