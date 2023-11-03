@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import  Navbar  from "./components/navbar";
@@ -7,9 +8,9 @@ import { ShopContextProvider } from "./context/shop-context";
 import Contact from "./pages/contact";
 import About from "./pages/about";
 import Login from "./pages/login";
-
+import Footer from "./components/footer";
 function App() {
-  return (
+  return (<>
     <div className="App">
       <ShopContextProvider>
       <BrowserRouter>
@@ -25,7 +26,8 @@ function App() {
           </BrowserRouter>
       </ShopContextProvider>
     </div>
-  );
+    <Footer/>
+    </> );
 }
 
 export default App;

@@ -7,7 +7,15 @@ import img6 from './images/acer.jpg'
 import img7 from './images/asus tuf.jpg'
 import img8 from './images/asus vivobook15.jpg'
 import img9 from './images/asus vivobook16x.jpg'
-import img10 from './images/msi gf63.jpg'
+import img10 from './images/headset1.jpg'
+import img11 from './images/headset2.jpg'
+import img12  from './images/headset3.jpg'
+import img13  from './images/headset4.jpg'
+import img14 from './images/headset5.jpg'
+import img15 from './images/headset1.jpg'
+import img16  from './images/boat.jpg'
+import img17 from './images/boat2.jpg'
+import img18 from './images/sony.jpg'
 
 export const ProductList = [
     {
@@ -69,6 +77,54 @@ export const ProductList = [
       productName: "MSI GF63",
       price: 700000,
       productImage: img5,
+    },
+    {
+      id: 11,
+      productName: "WirelessHeadPhones(red)",
+      price: 999.0,
+      productImage: img11,
+    },
+    {
+      id: 12,
+      productName: "PhilipsHeasPhones",
+      price: 2000.0,
+      productImage: img12,
+    },
+    {
+      id: 13,
+      productName:"WirelessHeadPhones",
+      price: 4000.0,
+      productImage: img13,
+    },
+    {
+      id: 14,
+      productName: "Philips",
+      price: 1200.0,
+      productImage: img14,
+    },
+    {
+      id: 15,
+      productName: "WirelessHeaphones",
+      price: 700,
+      productImage: img15,
+    },
+    {
+      id: 16,
+      productName:"Boat",
+      price: 400.0,
+      productImage: img16,
+    },
+    {
+      id: 17,
+      productName: "Boat(Blue)",
+      price: 1200.0,
+      productImage: img17,
+    },
+    {
+      id: 18,
+      productName: "SonyEarphones",
+      price: 700,
+      productImage: img18,
     },
   
   ];

@@ -4,8 +4,7 @@ const About = () => {
   return (
     <div>
       <h1>
-        We are provide multiple  Progarming languages
-      </h1>
+Welcome to ELECTRONIC GADGETSShopping Cart      </h1>
     </div>
   )
 }

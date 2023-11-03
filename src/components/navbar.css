@@ -1,8 +1,16 @@
-.nav {
-  background-color: black;
-  padding: 20px ;
-
+*{
+  margin: 0;
+  padding: 0;
 }
+
+.header {
+position: sticky;
+top: 0;
+  background-color: black;
+  padding: 20px;
+}
+
+
 
 .list {
   list-style: none;
@@ -25,3 +33,13 @@
   background-color: white;
   color: black;
 }
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+/* .footer a{
+  vertical-align: middle;
+} */
