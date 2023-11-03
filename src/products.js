@@ -80,19 +80,19 @@ export const ProductList = [
     },
     {
       id: 11,
-      productName: "WirelessHeadPhones(red)",
+      productName: "WirelessHeadPhones(Black)",
       price: 999.0,
       productImage: img11,
     },
     {
       id: 12,
-      productName: "PhilipsHeasPhones",
+      productName: "PhilipsHeasPhones(Blue)",
       price: 2000.0,
       productImage: img12,
     },
     {
       id: 13,
-      productName:"WirelessHeadPhones",
+      productName:"WirelessHeadPhones(Black)",
       price: 4000.0,
       productImage: img13,
     },
@@ -104,7 +104,7 @@ export const ProductList = [
     },
     {
       id: 15,
-      productName: "WirelessHeaphones",
+      productName: "WirelessHeaphones(red)",
       price: 700,
       productImage: img15,
     },

@@ -1,4 +1,4 @@
-.productlist{
+/* .productlist{
   background-color: aqua;
 }
 
@@ -23,7 +23,7 @@
   color: white;
   background-color: black;
   border-radius: 50px;
-}
+} */
 
 
 
@@ -50,6 +50,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px rgba(15, 15, 15, 2.2);
+
 }
  
 
@@ -80,7 +82,7 @@
 .addToCart {
   background-color: transparent;
   border: 2px solid rgb(19, 19, 19);
-  min-width: 100px;
+  width: 125px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;

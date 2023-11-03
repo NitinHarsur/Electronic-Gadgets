@@ -4,6 +4,7 @@ import { ProductList } from "../../products";
 import { CartItem } from "./cart-item";
 import { useNavigate } from "react-router-dom";
 import "./cart.css";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
@@ -14,7 +15,9 @@ export const Cart = () => {
   return (
     <div className="cart">
       <div>
-        <h1>your Cart Items</h1>
+        <h1>
+          <b>Cart Items</b>
+        </h1>
       </div>
       <div className="cart">
         {ProductList.map((product) => {
@@ -26,7 +29,11 @@ export const Cart = () => {
 
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p > <b> Subtotal: ₹{totalAmount} </b></p>
+          <p>
+            {" "}
+            <b> Subtotal: ₹{totalAmount} </b>
+          </p>
+
           <button onClick={() => navigate("/")}> Continue Shopping </button>
           <button
             onClick={() => {
@@ -39,7 +46,16 @@ export const Cart = () => {
           </button>
         </div>
       ) : (
-        <h1> Your Shopping Cart is Empty</h1>
+        <h1>
+          {" "}
+          Your Shopping Cart is Empty{" "}
+          <button
+            onClick={() => navigate("/")}
+            style={{ width: "175px", borderRadius: "30px",backgroundColor:'black'}}
+          >
+            Click Here to Shop
+          </button>
+        </h1>
       )}
     </div>
   );
