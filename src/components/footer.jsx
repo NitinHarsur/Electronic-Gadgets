@@ -3,9 +3,8 @@ import './navbar.css';
 import { InstagramLogo,FacebookLogo } from 'phosphor-react';
 
 const Footer = () =>{
-const names=['Nitin(Team Leader)','Beerling','Roopali','Akash']
-
-  
+const names=['Nitin(Team Leader)','Bheeraling','Roopali','Akash']
+ 
     return (
         <footer className="footer">
           <div className='links'>
@@ -20,7 +19,6 @@ const names=['Nitin(Team Leader)','Beerling','Roopali','Akash']
           )
         }
 </div>
-
         </div>
         
         </footer>
