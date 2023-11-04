@@ -1,98 +1,64 @@
-/* .productlist{
-  background-color: aqua;
-}
-
-.productlist .list {
-  display: flex;
-  list-style: none;
-  padding: 10px;
-  gap: 120px;
-}
-
-.productlist .list a {
-  color: black;
-  text-decoration: none;
-}
-
-.productlist .list li {
-  padding: 20px;
-}
-
-
-.productlist .list a:hover {
-  color: white;
-  background-color: black;
-  border-radius: 50px;
-} */
-
-
-
-
 .shopTitle {
   margin-top: 100px;
   text-align: center;
   font-size: 40px;
 }
+
 .products {
   width: 100%;
-  height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  grid-template-columns: 1fr; /* Default to a single column */
+  gap: 20px; /* Add some spacing between products */
+  justify-items: center; /* Center products horizontally */
 }
 
 .product {
   border-radius: 15px;
-  width: 300px;
-  height: 350px;
-  margin: 50px;
+  width: 250px; /* Reduce the width */
+  height: 300px; /* Adjust the height */
+  margin: 20px; /* Increase the margin for spacing */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(15, 15, 15, 2.2);
-
-}
- 
-
-
-.product img {
-  width: 400px;
-}
-.product hover {
-  transform: scale(2);
-}
-
-.product .description {
-  text-align: center;
-}
-.product img {
-  width: 100%; /* Make sure images are the same width */
-  height: auto;
-  max-height: 200px; /* Limit the height to prevent distortion */
-  object-fit: contain; /* Maintain image aspect ratio */
-}
-
- .product:hover {
-  transform: scale(1.2);
   transition: 0.3s ease-in;
-  cursor: pointer;
-} 
+}
+
+.product img {
+  width: 100%;
+  max-height: 150px; /* Adjust the max height */
+  object-fit: contain;
+}
+
+.product:hover {
+  transform: scale(1.1); 
+}
 
 .addToCart {
   background-color: transparent;
   border: 2px solid rgb(19, 19, 19);
   width: 125px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 10px;
   border-radius: 15px;
   color: black;
+  text-align: center;
 }
 
 .addToCart:hover {
   background-color: rgb(19, 19, 19);
   color: white;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .products {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
 }

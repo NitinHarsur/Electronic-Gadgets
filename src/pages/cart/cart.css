@@ -36,6 +36,14 @@
   color: white;
   border-radius: 25px;
 }
+.countHandler button:hover{
+  width: 10%;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
 
 .checkout button {
   vertical-align: middle;
@@ -45,7 +53,7 @@
   background-color: rgb(19, 19, 19);
   color: white;
   border: none;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 10px;
   cursor: pointer;
 }
@@ -53,4 +61,7 @@
   color: black;
   background-color: white;
   border: 2px solid black;
+  border-radius: 25px;
+
+  
 }

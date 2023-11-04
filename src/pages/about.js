@@ -4,7 +4,8 @@ const About = () => {
   const styles = {
     backgroundColor: 'yellow',
     fontSize: '30px',
-    fontFamily: ' Playpen Sans, cursive', // Comma-separated list of font families
+    fontFamily: ' Playpen Sans, cursive', 
+    padding:'20px'
   };
   return (
     <div style={styles}>
